@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap DND Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Bootstrap 101</title>
+</head>
+<body>
+    
+    <!-- Navbar Section Starts Here -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fw-bold">VECO</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  Navbar Section Ends Here -->
+
+    <!-- Hero Section Starts Here -->
+    <section class="bg-dark text-light text-sm-start text-center padding-small">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1 class="fw-bold">Become a <span class="text-primary">Full Stack Web Developer </span></h1>
+                    <p class="lead my-4">We focus on teaching students the fundamentals of the latest and greatest technologies to prepare them for their first deve role</p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Enroll Now </button>
+                </div>
+                <img src="img/responsive-design.png" alt="Show Case Image" class="img-fluid w-50 d-none d-sm-block">
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Ends Here -->
+
+    <!-- Newsletter Section Starts Here -->
+     <section class="bg-primary text-light padding-small">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="fw-light mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter email here" required>
+
+                    <button class="btn btn-dark btn-lg" type="button">Subscribe</button>
+                  </div>
+            </div>
+        </div>
+     </section>
+    <!-- Newsletter Section Ends Here -->
+
+    <!-- Services Section Starts Here -->
+    <section class="padding-small">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Car One -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="car-title mb-3">
+                                Virtual
+                            </h3>
+                            <p class="card-text">
+                                An environment where students will study a digital-based curriculum taught by instructors that lecture online via video and/or audio.
+                            </p>
+                            <a href="#" class="btn btn-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Two -->
+                <div class="col-md">
+                    <div class="card bg-success text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="car-title mb-3">
+                                Hybrid
+                            </h3>
+                            <p class="card-text">
+                                The space, equipment and tools used in schools. Therefore, it refers to the physical structures of the school environment.
+                            </p>
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Three -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="car-title mb-3">
+                                Face-To-Face
+                            </h3>
+                            <p class="card-text">
+                                Learning material are taught in person to a group of students. This allows for a live interaction between a learner and an instructor.
+                            </p>
+                            <a href="#" class="btn btn-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section Ends Here -->
+
+    <!-- Courses Section Starts Here -->
+    <section class="padding-small" id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/fundamentals.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md padding-small">
+                    <h2 class="fw-bold">Learn The Fundamentals</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nesciunt atque iste id debitis natus nemo, alias recusandae, ullam repudiandae reprehenderit. Officiis nam quo voluptate modi dolor voluptates mollitia in!
+                    </p>
+                    <a data-bs-toggle="modal" data-bs-target="#enroll"  class="btn btn-primary mt-3">
+                        Start Learning Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-small bg-dark text-light" id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md padding-small">
+                    <h2 class="fw-bold">Learn Responsive Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nesciunt atque iste id debitis natus nemo, alias recusandae, ullam repudiandae reprehenderit. Officiis nam quo voluptate modi dolor voluptates mollitia in!
+                    </p>
+                    <a data-bs-toggle="modal" data-bs-target="#enroll" class="btn btn-primary mt-3">
+                        Enroll Now
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/hero-image.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses Section Ends Here -->
+
+    <!-- FAQ Section Starts Here -->
+    <section id="questions" class="padding-small">
+       <div class="container">
+        <h2 class="text-center mb-4 fw-bold">
+            Frequently Asked Questions
+        </h2>
+        <!--    Accordion    -->
+        <div class="accordion accordion-flush" id="questions">
+            <!-- Item One -->
+            <div class="accordion-item"> 
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                  Do you offer certificates?
+                </button>
+              </h2>
+              <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga obcaecati blanditiis maiores illum libero perferendis minima perspiciatis provident saepe. Rerum vero necessitatibus, blanditiis laudantium tempora eveniet repudiandae earum maxime nulla deleniti est iure laboriosam, accusantium, quod quas! Quos, ducimus? Nulla.</div>
+              </div>
+            </div>
+            <!-- Item Two -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                  Where are you located?
+                </button>
+              </h2>
+              <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur exercitationem quisquam! Expedita placeat porro iste quas eum qui quo dolorem, quisquam nostrum alias blanditiis veritatis laboriosam, officia architecto at, iusto tenetur. Quam omnis consequatur dolor inventore ullam expedita vero.</div>
+              </div>
+            </div>
+            <!-- Item Three -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                  Do you have weekend lessons?
+                </button>
+              </h2>
+              <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat ipsum laudantium tempora, reiciendis expedita libero quis numquam! Eius amet accusamus reiciendis repellat reprehenderit excepturi est cum non. Cupiditate nam illo sit fuga doloremque. Architecto repellendus soluta repudiandae saepe assumenda?</div>
+              </div>
+            </div>
+            <!-- Item Three -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                    How long does it take to finish the course?
+                  </button>
+                </h2>
+                <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat ipsum laudantium tempora, reiciendis expedita libero quis numquam! Eius amet accusamus reiciendis repellat reprehenderit excepturi est cum non. Cupiditate nam illo sit fuga doloremque. Architecto repellendus soluta repudiandae saepe assumenda?</div>
+                </div>
+              </div>
+          </div>
+       </div>
+    </section>
+    <!-- FAQ Section Ends Here -->
+    
+    <!-- Instructors Section Starts Here -->
+    <section id="instructors" class="padding-small bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white fw-bold">
+                Our Instructors
+            </h2>
+
+            <p class="lead text-center text-white mb-5 ">
+                Our instructors all have 5+ years of experiences working as web developers in big tech companies in the world
+            </p>
+
+            <div class="row g-4">
+                <!-- Instructor One -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="" class="rounded-circle mb-3">
+
+                            <h3 class="card-title mb-3">James Allan</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, facere.
+                            </p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-whatsapp text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Two -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="" class="rounded-circle mb-3">
+
+                            <h3 class="card-title mb-3">Slyvia Alnord</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, facere.
+                            </p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-whatsapp text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Three -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="" class="rounded-circle mb-3">
+
+                            <h3 class="card-title mb-3">Brenda Ion</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, facere.
+                            </p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-whatsapp text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Four -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="" class="rounded-circle mb-3">
+
+                            <h3 class="card-title mb-3">Paul Schizo</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, facere.
+                            </p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-whatsapp text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Instructor five -->
+                   <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="" class="rounded-circle mb-3">
+
+                            <h3 class="card-title mb-3">Annita Bale</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, facere.
+                            </p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-whatsapp text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Instructor six -->
+                   <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="" class="rounded-circle mb-3">
+
+                            <h3 class="card-title mb-3">Ellen Din</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, facere.
+                            </p>
+                            <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                            <a href="#" class="bi bi-whatsapp text-dark mx-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Instructors Section Ends Here -->
+    
+    <!-- Contact Section Starts Here -->
+    <section class="padding-small" id="contact">
+        <div class="container">
+          <div class="row g-4 d-flex align-items-center">
+            <div class="col-md">
+                <h2 class="text-center mb-4 fw-bold">
+                    Contact Us
+                </h2>
+                <ul class="list-group list-group-flush lead">
+                    <li class="list-group-item d-flex align-items-center">
+                        <span class="fw-bold fs-3 text-primary px-3"><i class="bi bi-geo-alt-fill"></i></span>Chichiri - Blantyre
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <span class="fw-bold fs-3 text-primary px-3"><i class="bi bi-telephone-fill"></i></span>(+265 998 345 456)
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <span class="fw-bold fs-3 text-primary px-3"><i class="bi bi-envelope-fill"></i></span>cove@bootcamp.com
+                    </li>  
+                </ul>
+            </div>
+            <div class="col-md">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15356.686922270623!2d35.02516505!3d-15.794896349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1706620463898!5m2!1sen!2smw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-location"></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <footer class="padding-small bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">COVE &copy; AuthentiQ Code 2024</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 padding-small fs-1" ><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </div>
+    </footer>
+
+    <!-- Toggle Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="enrollLabel">Enroll With Us!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="firstname" class="col-form-label">First Name</label>
+                        <input type="text" name="firstname" id="first-name" class="form-control" placeholder="Enter first name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastname" class="col-form-label">Last Name</label>
+                        <input type="text" name="lastname" id="last-name" class="form-control" placeholder="Enter last name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Email</label>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">Phone</label>
+                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter phone">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap Script Tag -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

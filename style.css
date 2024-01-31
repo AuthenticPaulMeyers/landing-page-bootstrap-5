@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(min-width: 768px)
+{
+    .news-input{
+        width: 50%;
+    }
+    
+}
+
+.padding-small{
+    padding: 40px 8px;
+}
+body::before{
+    display: block;
+    content:'';
+    height: 50px;
+}
+
+
+#map{
+    width: 100%;
+}
+
+#map .map-location{
+    width: 100%;
+}
